@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NOMAD Coffee</title>
+
+    <style>
+     <link rel="stylesheet" href="https://use.typekit.net/uiv7gzx.css"></link>
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body, main, header, footer{
+    margin: 0;
+    padding: 0;
+    width:100vw;
+
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: neue-haas-unica, Helvetica, sans-serif;
+    font-size: 300;
+color: #030303;
+text-decoration: none;
+}
+#hid {
+    display: none;   
+    }
+header{
+    background: linear-gradient(180deg, rgba(255,255,255,1), rgba(255,255,255,0));
+
+}
+a:hover, a:active{
+    font-weight: 600;
+}
+#linkBlack {
+    color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6, a
+{text-transform:uppercase;
+}
+#up { 
+    background-image: url("assets/1bck.jpg");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    margin: 0;
+    padding:0;
+    height:100vh;
+    width:100vw;
+}
+#navs {
+    padding-top: 2vh;
+
+}
+#primaryNav{
+    font-size: 8vw;
+    font-weight:300;
+    display: flex;
+    height: 10%;
+    justify-content: baseline;
+    justify-content: space-between;
+    width: 100vw;
+
+}
+#cafe {
+    display: block;
+    text-align:left;
+}
+
+#nomad {
+    display: block;
+    text-align:right;
+
+}
+
+#secondaryNav {
+    font-size: 6vw;
+    font-weight: 300;
+    line-height:0.8;
+    display: flex;
+    height: 10%;
+    justify-content: baseline;
+    justify-content: space-between;
+    padding-top: 0.2vh;
+    width: 100vw;
+}
+
+#lab {
+text-align: center;}
+#day {text-align: right;}
+
+main{
+    height:100vh;
+}
+.address {
+    background: linear-gradient(0deg, rgba(255,255,255,1), rgba(255,255,255,0));
+    height: 8vh;
+    width:100vw;
+
+} 
+#addr {
+    font-size: 4.8vw;
+    font-weight: 300;
+    text-align:center;
+    
+}
+#container {
+    padding:0;
+  position: absolute;
+  bottom:0;
+    
+}
+.DOW{
+    background-color: #ffffff;
+    display:flex;
+    font-size: 6vw;
+    font-weight: 300;
+    justify-content:space-between;
+    width: 100vw;
+
+}
+#dowRight {
+    text-align: right;
+    margin-left: 0;
+    padding-left:0;
+}
+
+footer {
+    background: #030303;
+    color: #ffffff;
+    height:100vh;
+    margin:0;
+    padding: 0;
+    width:100vw;
+}
+
+ .wh, #phone, #mail
+{
+    color: #ffffff;
+}
+
+.wh, #phone, #details{
+    text-align: right;
+}
+#cn {
+    font-size:20vw;
+    font-weight: 600;
+    line-height:2;
+    margin:0;
+    padding:0;
+}
+#phone {
+    font-size: 10vw;
+    font-weight:300;
+    line-height: 0.8;
+    margin:0;
+    padding:0;
+  }
+#mail {
+    line-height: 0.8;
+    font-size: 10vw;
+    font-weight: 300;
+
+}
+
+#det {
+    font-size:10vw;
+    font-weight:300;
+    margin-top: 10vh;
+    background-color: #030303;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1920px) {
+ 
+#lhs{
+    background-image: url(assets/back0.jpg);
+    background-size:cover;
+    border-right: 8px #030303 solid;
+    display: inline;
+    height:100vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position:fixed;
+    width: calc(100vw - 383px);
+
+}
+
+   #rhs{
+    float: right;
+}
+   
+
+#up {width: 375px;
+margin:0;
+padding: 0;}
+   header,main, footer, header, #secondaryNav,  #container, .address {
+      
+       background: none;
+      /* background-color: #ffffff;*/
+      background-color:#ffffff;
+      margin:0;
+       padding:0;
+      width:375px;
+
+   }
+
+   #up {background:none;
+   }
+   .header{ background:none;}
+   /* on image{
+       border-left: 8px #030303 solid;
+   }*/
+   #primaryNav {
+       display:block;
+       flex-direction: column;
+       font-size:80px;
+       margin-top: 2vh;
+       width:100%;}
+       #cafe {
+           font-weight: 600;
+       }
+    
+       #nomad {
+        align-content: right;
+
+           font-size: 80px;
+           position:absolute;
+           bottom:1vh;
+           width: 375px;
+       }
+
+#secondaryNav {
+    display:flex;
+    flex-direction: column;
+    font-size:34px;
+}
+#home{ font-weight:600;}
+#lab, #day, #addr{    text-align: left;
+}
+
+.DOW{
+    background:none;
+    font-size: 28px;
+    font-weight: 600;
+    width: 375px;
+}
+footer {width: 375px;
+background-color: #030303;
+}
+#cn {
+    font-size:70px;
+}
+
+#mail, #phone, #det {
+    font-size:34px;
+}
+.address {background: none;
+}
+
+#addr {
+    font-size: 28px;
+    text-align:left;
+    width:375;
+}
+/*
+#home.a:hover, #home.a:active {
+    {
+    content: url("assets/1bck.jpg"); 
+    display: float;
+    height:375px;
+    height: auto;
+    z-index: 8675309;
+
+}*/
+}
+
+
+}
+    </style>
+    </head>
+    <body>
+        <aside id="lhs">           
+             <section id="hid"></section>
+        </aside>
+        <aside id="rhs">
+
+        <section id="up">
+    <header>
+        <section id="navs">
+        <nav id="primaryNav">
+            <section><a id="cafe" href ="">CAFÉS</a></section>
+            <section><a id="nomad" href="">NOMAD</a></section>
+        </nav>
+        
+        <nav id="secondaryNav">
+            <section id="home"> <a href="">ROASTER'S</br>HOME</a> </section>
+            <section id="lab"> <a href="">COFFEE</br>LAB</a></section>
+            <section id="day"> <a href="">NOMAD</br>EVERY DAY</a> </section>
+        </nav>
+        </section>
+        </header>
+
+    <main>
+        
+        <section id= "container">
+             <section class="address">
+             <p id="addr">Carrer de Pujades 95</br>08005 Barcelona</p>
+         <!--<p id="addr">Passatge Sert 12</br>08003 Barcelona</p>
+         <p id="addr">Carrer de Joaquín Costa 26</br>08001 Barcelona</p>-->
+            </section>
+
+            <section class="DOW">
+            <p id="dowLeft">MON - FRI</br>9:00 - 17:00</p>
+            <p id="dowRight">SAT - SUN</br>CLOSED</p>
+            </section>
+        </section>
+    </main>
+</section>
+  <footer>
+      <section id="contact">
+          <h1 class="wh" id="cn">CONTACT</h1>
+          <h2 id="phone">+34 628 566 235</h2>
+          <h2 id="mail"><a id= "linkBlack"href="mailto:info@nomadcoffee.es">INFO</br>@NOMADCOFFEE.ES</a></h2>
+      </section>
+      <section id="details">
+          <p class="wh" id="det">Come meet us in our roastery and shops where we serve, distribute, train, play, experiment and provide consulting.</p>
+    </section>
+  </footer>
+</aside>
+  </body>
+</html>
+
